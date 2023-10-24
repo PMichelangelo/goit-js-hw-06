@@ -16,6 +16,8 @@ function createBoxes(amount) {
   const initialSize = 30;
   const step = 10;
 
+  destroyBoxes();
+
   const boxes = [];
   for (let i = 0; i < amount; i++) {
     const box = document.createElement("div");
